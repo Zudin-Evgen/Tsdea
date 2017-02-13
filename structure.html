@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Центральний державний електронний архів України</title>
+</head>
+<body>
+  <div class="container">
+    <header class="header" role="banner">
+      <div class="header__right">
+        <nav>
+          <ul class="nav">
+            <li class="nav__item"><a class="nav__link" href="#">Головна</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Питання-Відповіді</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Про архів</a>
+              <ul class="nav__submenu">
+                <li class="nav__submenu-item"><a href="history.html" class="nav__submenu-link">Історія створення</a></li>
+                <li class="nav__submenu-item"><a href="structure.html" class="nav__submenu-link">Структура</a></li>
+                <li class="nav__submenu-item"><a href="#" class="nav__submenu-link">Презентаційні матеріали</a></li>
+              </ul>
+            </li>
+            <li class="nav__item"><a class="nav__link" href="#">Звернення громадян</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Публічна інформация</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Контакти</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container-main">
+      <form action="POST" class="search">
+        <div class="search__field">
+          <input type="search" name="search" placeholder="Введіть пошуковий запит...">
+          <button type="submit" name="button"></button>
+        </div>
+        <div class="search__options">
+          <input type="radio" name="criteria" id="1" value="site" checked>
+          <label for="1">По сайту</label>
+          <input type="radio" name="criteria" id="2" value="news">
+          <label for="2">По новинам</label>
+          <input type="radio" name="criteria" id="3" value="other">
+          <label for="3">Інше</label>
+        </div>
+      </form>
+      <main role="main">
+        <section class="structure">
+          <h2>Структура ЦДЕА України</h2>
+          <div class="administration">
+            <div class="administration__item clear">
+              <div class="administration__info">
+                <h3>Директор</h3>
+                <p>Ковтанюк Юрій Славович</p>
+                <p>Тел.: (044) 273-32-98</p>
+                <p>E-mail: y.kovtanyuk.tsdea@arch.gov.ua</p>
+                <p><a>Декларація про майно, доходи, витрати
+                і забов'язання фінансового характеру
+                Ю. С. Ковтанюка за 2014 рік</a></p>
+                <p><a>Декларація про майно, доходи, витрати
+                і забов'язання фінансового характеру
+                Ю. С. Ковтанюка за 2015 рік</a></p>
+              </div>
+              <img src="img/kovtanyuk.png" alt="Ковтанюк Юрій Славович" class="administration__photo">
+            </div>
+          </div>
+          <div class="personnel"></div>
+        </section>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

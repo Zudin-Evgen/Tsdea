@@ -8,11 +8,12 @@
 
 body {
   font-family: 'Open Sans Regular';
+  color: #252525;
 }
 
 a {
   text-decoration: none;
-  color: #00225c;
+  color: #552222;
 }
 
 ul {
@@ -31,87 +32,138 @@ ul {
 
 @media only screen and (min-width: 960px) {
 
+  .left__sidebar {
+    float: left;
+    width: 20%;
+  }
+
+  main {
+    float: left;
+    width: 80%;
+  }
+
   .container-main {
     width: 80%;
     margin: auto;
   }
 
-
   /*-----------------------------------HEADER-------------------------------------------*/
 
   .header {
-    height: 200px;
+    height: 160px;
     background: url('../img/header-bg2.png') no-repeat center;
     background-size: cover;
     margin-bottom: 20px;
   }
 
+  .header__content {
+    padding-top: 20px;
+  }
+
+  .header__right {
+    background: #172a4b;
+    border: 2px solid #fff;
+    width: 80%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .header__right::before {
+    content: '';
+    height: 100px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .logo {
+    background: url('../img/logo.png');
+    width: 230px;
+    height: 73px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
   nav {
-    background: #fff;
-    padding: 30px 0;
-    width: 1100px;
-    border: 3px solid #003e87;
+    display: inline-block;
+    vertical-align: middle;
   }
 
   .nav {
-    display: inline-block;
+    border: #000;
   }
 
   .nav__item {
-    float: left;
-    border-right: 2px solid #003e87;
     position: relative;
-  }
-
-  .nav__item:last-child {
-    border-right: none;
+    float: left;
   }
 
   .nav__link {
-    display: block;
-    padding: 7px;
-    font-size: 20px;
+    padding: 10px;
+    color: #fff;
   }
 
   .nav__link:hover {
-    background: #003e87;
-    color: #fff;
+    border-bottom: 3px solid #fff;
   }
 
-  .nav__submenu {
+    /*-----------------------------------LEFT-SIDEBAR-------------------------------------------*/
+  .menu {
+    border: 2px solid #122142;
+    width: 200px;
+  }
+
+  .menu__item {
+    color: #fff;
+    background: #122142;
+    padding: 10px;
+    border-bottom: 1px solid #122142;
+    position: relative;
+  }
+
+  .menu__link {
+    display: block;
+    padding: 10px;
+  }
+
+  .menu__submenu {
     display: none;
+    border: 1px solid #000;
     position: absolute;
-    background: #003e87;
+    left: 203px;
+    top: -2px;
+    background: #fff;
+  }
+
+  .menu__submenu-item {
     width: 150px;
   }
 
-  .nav__submenu-item {
-    padding: 7px;
+  .menu__submenu-link {
+    display: block;
+    color: #02489c;
+    padding: 10px;
   }
 
-  .nav__submenu-link {
-    color: #fff;
-    font-size: 20px;
+  .menu__item:hover {
+    cursor: pointer;
+    background: #fff;
+    color: #122142;
   }
 
-  .nav__item:hover .nav__submenu {
+  .menu__item:hover .menu__submenu {
     display: block;
   }
 
-  .nav__submenu-item:hover {
-    background: white;
-
-  }
-
-  .nav__submenu-link:hover {
-    color: blue;
+  .menu__submenu-item:hover .menu__submenu-link {
+    background: #ededed;
+    color: #0e2437;
   }
 
 
   /*-----------------------------------SEARCH FORM-------------------------------------------*/
 
   .search {
-    width: 600px;
+    width: 362px;
     margin: auto;
     height: 100px;
     border: 1px solid #cfcfcf;
@@ -126,7 +178,7 @@ ul {
   input[type="search"] {
     float: left;
     padding-left: 15px;
-    width: 518px;
+    width: 260px;
     height: 40px;
   }
 
@@ -145,12 +197,16 @@ ul {
     margin-right: 30px;
   }
 
+  .search label:last-child {
+    margin-right: 0;
+  }
+
   input[type="radio"]:hover, .search label:hover {
     cursor: pointer;
   }
 
     /*-----------------------------------EXPOSITIONS-------------------------------------------*/
-  .content {
+  .expositions {
     margin-top: 30px;
   }
 
@@ -185,5 +241,22 @@ ul {
   .exposition__item:hover {
     box-shadow: 0 0 30px 5px #525252;
     transition: box-shadow .15s;
+  }
+
+  /*----------------------------------- STRUCTURE -------------------------------------------*/
+  .administration__info {
+    width: 300px;
+    float: left;
+  }
+
+  .administration__photo {
+    width: 170px;
+    border-radius: 50%;
+  }
+
+  .administration__photo:hover {
+    width: 170px;
+    height: 170px;
+    content: url('../img/kovtanyuk-grey.png');
   }
 }

@@ -5,27 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/main.css">
-  <title>Центральний державний електронний архів України</title>
+  <title>Наші виставки</title>
 </head>
 <body>
   <div class="container">
     <header class="header">
-      <nav>
-        <ul class="nav">
-          <li class="nav__item"><a class="nav__link" href="#">Головна</a></li>
-          <li class="nav__item"><a class="nav__link" href="#">Питання-Відповіді</a></li>
-          <li class="nav__item"><a class="nav__link" href="#">Про архів</a>
-            <ul class="nav__submenu">
-              <li class="nav__submenu-item"><a href="#" class="nav__submenu-link">Історія створення</a></li>
-              <li class="nav__submenu-item"><a href="#" class="nav__submenu-link">Структура</a></li>
-              <li class="nav__submenu-item"><a href="#" class="nav__submenu-link">Презентаційні матеріали</a></li>
+      <div class="header__content">
+        <div class="logo"></div>
+        <div class="header__right">
+          <nav>
+            <ul class="nav">
+              <li class="nav__item"><a class="nav__link" href="#">Головна</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Питання-Відповіді</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Звернення громадян</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Публічна інформация</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Контакти</a></li>
             </ul>
-          </li>
-          <li class="nav__item"><a class="nav__link" href="#">Звернення громадян</a></li>
-          <li class="nav__item"><a class="nav__link" href="#">Публічна інформация</a></li>
-          <li class="nav__item"><a class="nav__link" href="#">Контакти</a></li>
-        </ul>
-      </nav>
+          </nav>
+        </div>
+      </div>
     </header>
     <div class="container-main">
       <form action="POST" class="search">
@@ -42,62 +40,84 @@
           <label for="3">Інше</label>
         </div>
       </form>
-      <div class="content">
-        <div class="exposition__wrapper">
-          <a href="#" class="exposition__link">
-            <figure class="exposition__item">
-              <img src="trash/header6.jpg" alt="" class="exposition__img">
-              <span class="exposition__date">20.01.2017</span>
-              <figcaption class="exposition__name">Ми пам'ятаємо: Революція гідності 2013-2014 років</figcaption>
-            </figure>
-          </a>
-        </div>
-        <div class="exposition__wrapper">
-          <a href="#" class="exposition__link">
-            <figure class="exposition__item">
-              <img src="trash/header6.jpg" alt="" class="exposition__img">
-              <span class="exposition__date">20.01.2017</span>
-              <figcaption class="exposition__name">Ми пам'ятаємо: Революція гідності 2013-2014 років</figcaption>
-            </figure>
-          </a>
-        </div>
-        <div class="exposition__wrapper">
-          <a href="#" class="exposition__link">
-            <figure class="exposition__item">
-              <img src="trash/header6.jpg" alt="" class="exposition__img">
-              <span class="exposition__date">20.01.2017</span>
-              <figcaption class="exposition__name">Ми пам'ятаємо: Революція гідності 2013-2014 років</figcaption>
-            </figure>
-          </a>
-        </div>
-        <div class="exposition__wrapper">
-          <a href="#" class="exposition__link">
-            <figure class="exposition__item">
-              <img src="trash/header6.jpg" alt="" class="exposition__img">
-              <span class="exposition__date">20.01.2017</span>
-              <figcaption class="exposition__name">Ми пам'ятаємо: Революція гідності 2013-2014 років</figcaption>
-            </figure>
-          </a>
-        </div>
-        <div class="exposition__wrapper">
-          <a href="#" class="exposition__link">
-            <figure class="exposition__item">
-              <img src="trash/header6.jpg" alt="" class="exposition__img">
-              <span class="exposition__date">20.01.2017</span>
-              <figcaption class="exposition__name">Ми пам'ятаємо: Революція гідності 2013-2014 років</figcaption>
-            </figure>
-          </a>
-        </div>
-        <div class="exposition__wrapper">
-          <a href="#" class="exposition__link">
-            <figure class="exposition__item">
-              <img src="trash/header6.jpg" alt="" class="exposition__img">
-              <span class="exposition__date">20.01.2017</span>
-              <figcaption class="exposition__name">Ми пам'ятаємо: Революція гідності 2013-2014 років</figcaption>
-            </figure>
-          </a>
-        </div>
+      <div class="left__sidebar">
+        <ul class="menu">
+          <li class="menu__item">Про архів
+            <ul class="menu__submenu">
+              <li class="menu__submenu-item"><a href="history.html" class="menu__submenu-link">Історія створення</a></li>
+              <li class="menu__submenu-item"><a href="structure.html" class="menu__submenu-link">Структура</a></li>
+              <li class="menu__submenu-item"><a href="#" class="menu__submenu-link">Презентаційні матеріали</a></li>
+            </ul>
+          </li>
+          <li class="menu__item">Фонди</li>
+          <li class="menu__item">Нормативна база</li>
+          <li class="menu__item">Дорадчі органі</li>
+          <li class="menu__item">Державні закупівлі</li>
+          <li class="menu__item">Запобігання коррупції</li>
+          <li class="menu__item">Корисні посилання</li>
+          <li class="menu__item">Вакансії</li>
+          <li class="menu__item">Безпека життєдіяльності</li>
+          <li class="menu__item">Дотримання прав людини</li>
+        </ul>
       </div>
+      <main role="main">
+        <section class="expositions">
+          <div class="exposition__wrapper">
+            <a href="#" class="exposition__link">
+              <figure class="exposition__item">
+                <img src="trash/header6.jpg" alt="" class="exposition__img">
+                <span class="exposition__date">20.01.2017</span>
+                <figcaption class="exposition__name">Ми пам'ятаємо: Революція гідності 2013-2014 років</figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="exposition__wrapper">
+            <a href="#" class="exposition__link">
+              <figure class="exposition__item">
+                <img src="trash/header6.jpg" alt="" class="exposition__img">
+                <span class="exposition__date">20.01.2017</span>
+                <figcaption class="exposition__name">Ми пам'ятаємо: Революція гідності 2013-2014 років</figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="exposition__wrapper">
+            <a href="#" class="exposition__link">
+              <figure class="exposition__item">
+                <img src="trash/header6.jpg" alt="" class="exposition__img">
+                <span class="exposition__date">20.01.2017</span>
+                <figcaption class="exposition__name">Ми пам'ятаємо: Революція гідності 2013-2014 років</figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="exposition__wrapper">
+            <a href="#" class="exposition__link">
+              <figure class="exposition__item">
+                <img src="trash/header6.jpg" alt="" class="exposition__img">
+                <span class="exposition__date">20.01.2017</span>
+                <figcaption class="exposition__name">Ми пам'ятаємо: Революція гідності 2013-2014 років</figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="exposition__wrapper">
+            <a href="#" class="exposition__link">
+              <figure class="exposition__item">
+                <img src="trash/header6.jpg" alt="" class="exposition__img">
+                <span class="exposition__date">20.01.2017</span>
+                <figcaption class="exposition__name">Ми пам'ятаємо: Революція гідності 2013-2014 років</figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="exposition__wrapper">
+            <a href="#" class="exposition__link">
+              <figure class="exposition__item">
+                <img src="trash/header6.jpg" alt="" class="exposition__img">
+                <span class="exposition__date">20.01.2017</span>
+                <figcaption class="exposition__name">Ми пам'ятаємо: Революція гідності 2013-2014 років</figcaption>
+              </figure>
+            </a>
+          </div>
+        </section>
+      </main>
     </div>
   </div>
 </body>
