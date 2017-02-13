@@ -1,0 +1,65 @@
+@import url('normalize.css');
+@import url('fonts.css');
+
+/*----------------------------------- MAIN SETTINGS -----------------------------------------*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans Regular';
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.clear::after {
+  display: table;
+  content: '';
+  clear: both;
+}
+
+/*-------------------------DESKTOP(960px to ~ px)--------------------------------*/
+
+@media only screen and (min-width: 960px) {
+  
+  .search {
+    width: 50%;
+    height: 100px;
+    border: 1px solid #909090;
+    background: #fafafa;
+  }
+
+  .search__field {
+    margin-bottom: 10px;
+  }
+
+  input[type="search"] {
+    float: left;
+    padding-left: 15px;
+    width: 93%;
+    height: 40px;
+  }
+
+  button[type="submit"] {
+    background: #1286ff url('../img/search.png') no-repeat center;
+    width: 40px;
+    height: 40px;
+    border: none;
+  }
+
+  .search label {
+    margin-right: 30px;
+  }
+
+  input[type="radio"]:hover, .search label:hover {
+    cursor: pointer;
+  }
+}
