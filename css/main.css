@@ -1,0 +1,189 @@
+@import url('normalize.css');
+@import url('fonts.css');
+
+/*----------------------------------- MAIN SETTINGS -----------------------------------------*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans Regular';
+}
+
+a {
+  text-decoration: none;
+  color: #00225c;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.clear::after {
+  display: table;
+  content: '';
+  clear: both;
+}
+
+/*-------------------------DESKTOP(960px to ~ px)--------------------------------*/
+
+@media only screen and (min-width: 960px) {
+
+  .container-main {
+    width: 80%;
+    margin: auto;
+  }
+
+
+  /*-----------------------------------HEADER-------------------------------------------*/
+
+  .header {
+    height: 200px;
+    background: url('../img/header-bg2.png') no-repeat center;
+    background-size: cover;
+    margin-bottom: 20px;
+  }
+
+  nav {
+    background: #fff;
+    padding: 30px 0;
+    width: 1100px;
+    border: 3px solid #003e87;
+  }
+
+  .nav {
+    display: inline-block;
+  }
+
+  .nav__item {
+    float: left;
+    border-right: 2px solid #003e87;
+    position: relative;
+  }
+
+  .nav__item:last-child {
+    border-right: none;
+  }
+
+  .nav__link {
+    display: block;
+    padding: 7px;
+    font-size: 20px;
+  }
+
+  .nav__link:hover {
+    background: #003e87;
+    color: #fff;
+  }
+
+  .nav__submenu {
+    display: none;
+    position: absolute;
+    background: #003e87;
+    width: 150px;
+  }
+
+  .nav__submenu-item {
+    padding: 7px;
+  }
+
+  .nav__submenu-link {
+    color: #fff;
+    font-size: 20px;
+  }
+
+  .nav__item:hover .nav__submenu {
+    display: block;
+  }
+
+  .nav__submenu-item:hover {
+    background: white;
+
+  }
+
+  .nav__submenu-link:hover {
+    color: blue;
+  }
+
+
+  /*-----------------------------------SEARCH FORM-------------------------------------------*/
+
+  .search {
+    width: 600px;
+    margin: auto;
+    height: 100px;
+    border: 1px solid #cfcfcf;
+    background: #fafafa;
+    padding: 20px;
+  }
+
+  .search__field {
+    margin-bottom: 10px;
+  }
+
+  input[type="search"] {
+    float: left;
+    padding-left: 15px;
+    width: 518px;
+    height: 40px;
+  }
+
+  button[type="submit"] {
+    background: #1286ff url('../img/search.png') no-repeat center;
+    width: 40px;
+    height: 40px;
+    border: none;
+  }
+
+  button[type="submit"]:hover {
+    cursor: pointer;
+  }
+
+  .search label {
+    margin-right: 30px;
+  }
+
+  input[type="radio"]:hover, .search label:hover {
+    cursor: pointer;
+  }
+
+    /*-----------------------------------EXPOSITIONS-------------------------------------------*/
+  .content {
+    margin-top: 30px;
+  }
+
+  .exposition__wrapper {
+    width: 33.33%;
+    float: left;
+    margin-bottom: 20px;
+  }
+
+  .exposition__item {
+    margin: 0 auto;
+    width: 220px;
+    padding-bottom: 5px;
+  }
+
+  .exposition__img {
+    margin-bottom: 5px;
+  }
+
+  .exposition__date {
+    font-size: 14px;
+    margin-left: 3px;
+    color: #b8b8b8;
+  }
+
+  .exposition__name {
+    color: #3b3b3b;
+    font-family: 'Open Sans Bold';
+    margin: 7px 0 0 3px;
+  }
+
+  .exposition__item:hover {
+    box-shadow: 0 0 30px 5px #525252;
+    transition: box-shadow .15s;
+  }
+}
