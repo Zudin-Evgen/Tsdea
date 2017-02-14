@@ -10,36 +10,37 @@
 <body>
   <div class="container">
     <header class="header">
-      <div class="header__content">
-        <div class="logo"></div>
-        <div class="header__right">
-          <nav>
-            <ul class="nav">
-              <li class="nav__item"><a class="nav__link" href="#">Головна</a></li>
-              <li class="nav__item"><a class="nav__link" href="#">Питання-Відповіді</a></li>
-              <li class="nav__item"><a class="nav__link" href="#">Звернення громадян</a></li>
-              <li class="nav__item"><a class="nav__link" href="#">Публічна інформация</a></li>
-              <li class="nav__item"><a class="nav__link" href="#">Контакти</a></li>
-            </ul>
-          </nav>
-        </div>
+        <div class="header__container">
+          <div class="logo"></div>
+          <div class="header__right">
+            <div class="icons">
+              <form action="POST" class="search">
+                <input type="search" name="search" placeholder="Введіть пошуковий запит...">
+                <button type="submit" name="button"></button>
+              </form>
+              <div class="references">
+                <a href="https://www.facebook.com/pages/Central-State-Electronic-Archives-of-Ukraine/1432110883670839" target="_blank"><div class="references__facebook"></div></a>
+                <a href="https://www.youtube.com/channel/UCGzhf0y1ZIB9mLMZVJujXCA" target="_blank"><div class="references__youtube"></div></a>
+                <a href="https://uk.wikipedia.org/wiki/Центральний_державний_електронний_архів_України" target="_blank"><div class="references__wikipedia"></div></a>
+              </div>
+              <div class="language">
+                <a href="#"><div class="language__english"></div></a>
+                <a href="#"><div class="language__russian"></div></a>
+              </div>
+            </div>
+            <nav>
+              <ul class="nav">
+                <li class="nav__item"><a class="nav__link" href="#">Головна</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Питання-Відповіді</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Звернення громадян</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Публічна інформація</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Контакти</a></li>
+              </ul>
+            </nav>
+          </div>
       </div>
     </header>
-    <div class="container-main">
-      <form action="POST" class="search">
-        <div class="search__field">
-          <input type="search" name="search" placeholder="Введіть пошуковий запит...">
-          <button type="submit" name="button"></button>
-        </div>
-        <div class="search__options">
-          <input type="radio" name="criteria" id="1" value="site" checked>
-          <label for="1">По сайту</label>
-          <input type="radio" name="criteria" id="2" value="news">
-          <label for="2">По новинам</label>
-          <input type="radio" name="criteria" id="3" value="other">
-          <label for="3">Інше</label>
-        </div>
-      </form>
+    <div class="container-body">
       <div class="left__sidebar">
         <ul class="menu">
           <li class="menu__item">Про архів
@@ -89,36 +90,10 @@
               </figure>
             </a>
           </div>
-          <div class="exposition__wrapper">
-            <a href="#" class="exposition__link">
-              <figure class="exposition__item">
-                <img src="trash/header6.jpg" alt="" class="exposition__img">
-                <span class="exposition__date">20.01.2017</span>
-                <figcaption class="exposition__name">Ми пам'ятаємо: Революція гідності 2013-2014 років</figcaption>
-              </figure>
-            </a>
-          </div>
-          <div class="exposition__wrapper">
-            <a href="#" class="exposition__link">
-              <figure class="exposition__item">
-                <img src="trash/header6.jpg" alt="" class="exposition__img">
-                <span class="exposition__date">20.01.2017</span>
-                <figcaption class="exposition__name">Ми пам'ятаємо: Революція гідності 2013-2014 років</figcaption>
-              </figure>
-            </a>
-          </div>
-          <div class="exposition__wrapper">
-            <a href="#" class="exposition__link">
-              <figure class="exposition__item">
-                <img src="trash/header6.jpg" alt="" class="exposition__img">
-                <span class="exposition__date">20.01.2017</span>
-                <figcaption class="exposition__name">Ми пам'ятаємо: Революція гідності 2013-2014 років</figcaption>
-              </figure>
-            </a>
-          </div>
         </section>
       </main>
     </div>
+    <footer class="footer"></footer>
   </div>
 </body>
 </html>
