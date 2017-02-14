@@ -8,12 +8,11 @@
 
 body {
   font-family: 'Open Sans Regular';
-  color: #252525;
 }
 
 a {
   text-decoration: none;
-  color: #552222;
+  color: #c10000;
 }
 
 ul {
@@ -22,7 +21,12 @@ ul {
   padding: 0;
 }
 
-.clear::after {
+  [class*="col-"] {
+	  float: left;
+  }
+
+
+.container::after {
   display: table;
   content: '';
   clear: both;
@@ -31,106 +35,149 @@ ul {
 /*-------------------------DESKTOP(960px to ~ px)--------------------------------*/
 
 @media only screen and (min-width: 960px) {
-
-  .left__sidebar {
-    float: left;
-    width: 20%;
+	
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  
+  .container {
+	  width: 1170px;
+	  margin: auto;
   }
-
-  main {
-    float: left;
-    width: 80%;
-  }
-
-  .container-main {
-    width: 80%;
-    margin: auto;
-  }
-
   /*-----------------------------------HEADER-------------------------------------------*/
 
   .header {
-    height: 160px;
-    background: url('../img/header-bg2.png') no-repeat center;
-    background-size: cover;
-    margin-bottom: 20px;
+    padding: 7px 0;
+	background: #203a63;
+  }
+  
+  .nav__link {
+    padding: 5px 5px;
+    color: #fff;
+	float: left;
+  }
+  
+  .nav__link:hover {
+	  border-bottom: 2px solid #fff;
+  }
+  
+  .references {
+	float: right;
+	margin-right: 30px;
+  }
+  
+  .references__facebook {
+	margin: 0 3px;
+    float: left;
+    background: url('../img/icons.png') 0 0;
+    height: 35px;
+    width: 35px;
   }
 
-  .header__content {
-    padding-top: 20px;
+  .references__youtube {
+	margin: 0 3px;
+    float: left;
+    background: url('../img/icons.png') -36px 0;
+    height: 35px;
+    width: 35px;
   }
 
-  .header__right {
-    background: #172a4b;
-    border: 2px solid #fff;
-    width: 80%;
-    display: inline-block;
-    vertical-align: middle;
+  .references__wikipedia {
+	margin: 0 3px;
+    float: left;
+    background: url('../img/icons.png') -72px 0;
+    height: 35px;
+    width: 36px;
+  }
+  
+  .language {
+	float: right;
   }
 
-  .header__right::before {
-    content: '';
-    height: 100px;
-    display: inline-block;
-    vertical-align: middle;
+  .language__english {
+	margin: 0 3px;
+    float: left;
+    background: url(../img/icons.png) -139px 0;
+    height: 35px;
+    width: 32px;
   }
 
+  .language__ukrainian {
+	margin: 0 3px;
+    float: left;
+    background: url('../img/icons.png') -108px 0;
+    height: 35px;
+    width: 32px;
+  }
+
+  .language__russian {
+	margin: 0 3px;
+    float: left;
+    background: url('../img/icons.png') -170px 0;
+    height: 35px;
+    width: 32px;
+  }
+
+  /*-----------------------------------LOGO AND SEARCH SECTION-------------------------------------------*/
+  .logo-search {
+	  padding: 20px 0;
+  }
+  
   .logo {
     background: url('../img/logo.png');
     width: 230px;
     height: 73px;
-    display: inline-block;
-    vertical-align: middle;
   }
-
-  nav {
-    display: inline-block;
-    vertical-align: middle;
+  
+  .search {
+	margin-top: 1.2em;
+	float: right;
   }
-
-  .nav {
-    border: #000;
-  }
-
-  .nav__item {
-    position: relative;
+  
+  input[type="search"] {
     float: left;
+    padding-left: 15px;
+    width: 430px;
+    height: 35px;
   }
 
-  .nav__link {
-    padding: 10px;
-    color: #fff;
+  button[type="submit"] {
+	float: left;
+    background: #1286ff url('../img/search.png') no-repeat center;
+    width: 40px;
+    height: 35px;
+    border: none;
   }
 
-  .nav__link:hover {
-    border-bottom: 3px solid #fff;
+  button[type="submit"]:hover {
+    cursor: pointer;
   }
+  
+  /*-----------------------------------TOP-MENU SECTION-------------------------------------------*/
 
-    /*-----------------------------------LEFT-SIDEBAR-------------------------------------------*/
-  .menu {
-    border: 2px solid #122142;
-    width: 200px;
+  .top-menu {
+	background: #3d88ff;
   }
 
   .menu__item {
-    color: #fff;
-    background: #122142;
-    padding: 10px;
-    border-bottom: 1px solid #122142;
+    padding: 10px;	
+	float: left;
     position: relative;
-  }
-
-  .menu__link {
-    display: block;
-    padding: 10px;
   }
 
   .menu__submenu {
     display: none;
-    border: 1px solid #000;
+    border: 1px solid #898989;
     position: absolute;
-    left: 203px;
-    top: -2px;
     background: #fff;
   }
 
@@ -146,8 +193,8 @@ ul {
 
   .menu__item:hover {
     cursor: pointer;
-    background: #fff;
-    color: #122142;
+	background: #203a63;
+	color: #fff;
   }
 
   .menu__item:hover .menu__submenu {
@@ -156,64 +203,17 @@ ul {
 
   .menu__submenu-item:hover .menu__submenu-link {
     background: #ededed;
-    color: #0e2437;
+  }
+  /*-----------------------------------POST SECTION-------------------------------------------*/
+  
+  .post-area {
+	  padding-top: 20px;
   }
 
-
-  /*-----------------------------------SEARCH FORM-------------------------------------------*/
-
-  .search {
-    width: 362px;
-    margin: auto;
-    height: 100px;
-    border: 1px solid #cfcfcf;
-    background: #fafafa;
-    padding: 20px;
-  }
-
-  .search__field {
-    margin-bottom: 10px;
-  }
-
-  input[type="search"] {
-    float: left;
-    padding-left: 15px;
-    width: 260px;
-    height: 40px;
-  }
-
-  button[type="submit"] {
-    background: #1286ff url('../img/search.png') no-repeat center;
-    width: 40px;
-    height: 40px;
-    border: none;
-  }
-
-  button[type="submit"]:hover {
-    cursor: pointer;
-  }
-
-  .search label {
-    margin-right: 30px;
-  }
-
-  .search label:last-child {
-    margin-right: 0;
-  }
-
-  input[type="radio"]:hover, .search label:hover {
-    cursor: pointer;
-  }
-
-    /*-----------------------------------EXPOSITIONS-------------------------------------------*/
-  .expositions {
-    margin-top: 30px;
-  }
-
+  /*-----------------------------------EXPOSITIONS-------------------------------------------*/
   .exposition__wrapper {
-    width: 33.33%;
     float: left;
-    margin-bottom: 20px;
+    margin: 0 20px 20px;
   }
 
   .exposition__item {
@@ -245,7 +245,7 @@ ul {
 
   /*----------------------------------- STRUCTURE -------------------------------------------*/
   .administration__info {
-    width: 300px;
+    width: 440px;
     float: left;
   }
 
