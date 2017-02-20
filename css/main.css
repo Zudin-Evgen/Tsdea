@@ -21,9 +21,9 @@ ul {
   padding: 0;
 }
 
-  [class*="col-"] {
-	  float: left;
-  }
+[class*="col-"] {
+  float: left;
+}
 
 
 .container::after {
@@ -60,19 +60,38 @@ ul {
 	background: #203a63;
   }
   
+  nav {
+	padding-top: 4px;
+  }
+  
+  .nav__item {
+	  border-right: 2px solid #fff;
+  }
+  
   .nav__link {
     padding: 5px 5px;
     color: #fff;
 	float: left;
   }
   
-  .nav__link:hover {
-	  border-bottom: 2px solid #fff;
+  .map-link {
+	  float: right;
+	  margin-right: 10px;
+  }
+  
+  .site-map {
+	  background: url('../img/icons.png') -202px 0;
+	  width: 35px;
+	  height: 35px;
   }
   
   .references {
 	float: right;
 	margin-right: 30px;
+  }
+  
+  .references a{
+	float: left;
   }
   
   .references__facebook {
@@ -102,10 +121,13 @@ ul {
   .language {
 	float: right;
   }
+  
+  .language a{
+	  float: left;
+  }
 
   .language__english {
 	margin: 0 3px;
-    float: left;
     background: url(../img/icons.png) -139px 0;
     height: 35px;
     width: 32px;
@@ -113,7 +135,6 @@ ul {
 
   .language__ukrainian {
 	margin: 0 3px;
-    float: left;
     background: url('../img/icons.png') -108px 0;
     height: 35px;
     width: 32px;
@@ -121,7 +142,6 @@ ul {
 
   .language__russian {
 	margin: 0 3px;
-    float: left;
     background: url('../img/icons.png') -170px 0;
     height: 35px;
     width: 32px;
@@ -169,23 +189,31 @@ ul {
   }
 
   .menu__item {
-    padding: 10px;	
+	font-family: 'Open Sans Bold';
+    padding: 10px 30px;	
 	float: left;
     position: relative;
   }
+  
+  .menu__item:last-child {
+	  margin-right: 0;
+  }
 
-  .menu__submenu {
+  .submenu {
     display: none;
     border: 1px solid #898989;
     position: absolute;
+	left: 0;
+	top: 100%;
+	z-index: 2;
     background: #fff;
   }
 
-  .menu__submenu-item {
+  .submenu__item {
     width: 150px;
   }
 
-  .menu__submenu-link {
+  .submenu__link {
     display: block;
     color: #02489c;
     padding: 10px;
@@ -197,33 +225,86 @@ ul {
 	color: #fff;
   }
 
-  .menu__item:hover .menu__submenu {
+  .menu__item:hover .submenu {
     display: block;
   }
 
-  .menu__submenu-item:hover .menu__submenu-link {
+  .submenu__item:hover .submenu__link {
     background: #ededed;
   }
   /*-----------------------------------POST SECTION-------------------------------------------*/
   
-  .post-area {
+  .content-area {
 	  padding-top: 20px;
   }
+  
+  /*-----------------------------------SLIDER-------------------------------------------*/
+  
+  .slider {
+	  position: relative;
+	  overflow: hidden;
+  }
+  
+  .slides {
+	  width: 7000px;
+  }
+  
+  .slide {
+	  float: left;
+	  height: 300px;
+	  width: 293px;
+  }
+  
+   .arrow-left:hover, .arrow-right:hover {
+	   opacity: 1;
+	   transition: opacity 400ms;
+	   cursor: pointer;
+   }
+  
+  .arrow-left {
+	  position: absolute;
+	  opacity: 0.5;
+	  top: 40%;
+      left: 1%;
+	  background: url(../img/icons.png) -237px 0;
+      height: 60px;
+      width: 60px;
+  }
+  
+  .arrow-right {
+	  position: absolute;
+	  opacity: 0.5;
+	  top: 40%;
+      left: 92%;
+	  background: url('../img/icons.png') -298px 0;
+	  height: 60px;
+	  width: 60px;
+  }
+  
 
   /*-----------------------------------EXPOSITIONS-------------------------------------------*/
-  .exposition__wrapper {
-    float: left;
-    margin: 0 20px 20px;
-  }
 
-  .exposition__item {
-    margin: 0 auto;
-    width: 220px;
-    padding-bottom: 5px;
+  .expositions {
+	  padding-left: 35px;
   }
-
+  
+  .exposition {
+	  border-bottom: 2px solid #a8c9ff;
+	  padding: 10px 0;
+  }
+  
+  .exposition:hover {
+	  border-bottom: 2px solid #2165d3;
+	  transition: all 600ms;
+  }
+  
+  .expo__header {
+	  margin-top: 0px;
+  }
+  
   .exposition__img {
     margin-bottom: 5px;
+	width: 220px;
   }
 
   .exposition__date {
@@ -237,10 +318,11 @@ ul {
     font-family: 'Open Sans Bold';
     margin: 7px 0 0 3px;
   }
-
-  .exposition__item:hover {
-    box-shadow: 0 0 30px 5px #525252;
-    transition: box-shadow .15s;
+  
+  .all__expositions {
+	  padding-top: 20px;
+	  text-align: center;
+	  font: 24px 'Open Sans Bold';
   }
 
   /*----------------------------------- STRUCTURE -------------------------------------------*/
